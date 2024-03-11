@@ -1,0 +1,57 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+        
+    <header>
+        <img src="logo.jpg" alt="Company Logo" class ="logo" width="75" height="75"> 
+        <div class="company-name">AnimeHeroCollectibles</div>
+    </header>
+        
+    <div>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="products.html">Products</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+
+  <!---<main>: Below the navigation bar, where the signup form, username, password, 
+    confirm password, and email, and a "Signup" button, should be placed.-->
+	<main>
+        <section class="signup-form">
+            <form action="#" method="post">
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required pattern="[a-zA-Z][a-zA-Z0-9_-]{2,19}">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-_=+[]{}|;:'&quot;,.&lt;>?/`~]).{8,}$">
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$">
+
+            <input type="submit" value="Signup" style="margin-left: 10px;">
+            </form>
+        </section>
+    
+
+	</main>
+
+	<footer>
+		<!-- Copyright notice goes here -->
+    <p>&copy; Maliha Chowdhury Adrita & Chloe Choi. All rights reserved.</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
